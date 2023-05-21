@@ -1,9 +1,17 @@
 package com.brizuela.model;
 
+import lombok.*;
+
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity(name = "envio_terrestre")
+@EqualsAndHashCode(callSuper = true)
 public class EnvioTipoTerrestre extends Envio {
 
     @NotNull(message = "Bodega de entrega es requerido")
