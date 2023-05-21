@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/terrestre")
+@RequestMapping("/api/terrestre")
 public class EnvioTipoTerrestreController {
 
     private final EnvioTipoTerrestreService tipoTerrestreService;

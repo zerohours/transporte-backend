@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/maritimo")
+@RequestMapping("/api/maritimo")
 public class EnvioTipoMaritimoController {
 
     private final EnvioTipoMaritimoService tipoMaritimoService;
