@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-public class EnvioTipoMaritimo {
+public class EnvioTipoMaritimo extends Envio {
 
     @Column(name = "puerto_entrega")
     @NotNull(message = "Puerto de entrega es requeridoß")
