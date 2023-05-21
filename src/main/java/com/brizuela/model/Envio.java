@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Builder
@@ -32,10 +32,10 @@ public class Envio {
     private Integer cantidadProducto;
 
     @Column(name = "fecha_registro")
-    private LocalDateTime fechaRegistro;
+    private Date fechaRegistro;
 
     @Column(name = "fecha_entrega")
-    private LocalDateTime fechaEntrega;
+    private Date fechaEntrega;
 
     @Column(name = "precio_envio", nullable = false)
     @NotNull(message = "Precio debe ser positivo")
