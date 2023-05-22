@@ -1,5 +1,6 @@
 package com.brizuela;
 
+import com.brizuela.model.Cliente;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.brizuela.model.EnvioTipoTerrestre;
 import com.brizuela.service.EnvioTipoTerrestreService;
@@ -56,11 +57,14 @@ public class EnvioTerrestreControllerTest {
     private EnvioTipoTerrestre envioCamion() {
         EnvioTipoTerrestre envio = new EnvioTipoTerrestre();
         envio.setBodegaEntrega("San Salvador");
-        envio.setNumeroPlaca("123");
+        envio.setNumeroPlaca("ASD123");
         envio.setCantidadProducto(19);
         envio.setFechaEntrega(new Date());
         envio.setFechaRegistro(new Date());
-        envio.setNumeroGuia("999");
+        envio.setNumeroGuia("1234567890");
+        envio.setTipoProducto("Ventas");
+        envio.setPrecioEnvio(BigDecimal.valueOf(12));
+        envio.setPrecioOriginal(BigDecimal.valueOf(12));
         return envio;
     }
 
@@ -68,12 +72,14 @@ public class EnvioTerrestreControllerTest {
         EnvioTipoTerrestre envio = new EnvioTipoTerrestre();
         envio.setId(2L);
         envio.setBodegaEntrega("Santa Ana");
-        envio.setNumeroPlaca("12");
+        envio.setNumeroPlaca("ASD123");
+        envio.setTipoProducto("Ventas");
         envio.setPrecioEnvio(BigDecimal.valueOf(12));
+        envio.setPrecioOriginal(BigDecimal.valueOf(12));
         envio.setCantidadProducto(12);
         envio.setFechaEntrega(new Date());
         envio.setFechaRegistro(new Date());
-        envio.setNumeroGuia("888");
+        envio.setNumeroGuia("1234567890");
         return envio;
     }
 
