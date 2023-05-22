@@ -16,7 +16,7 @@ Este README contiene la información para ejeuctar el proyecto.
 
 ```
 {
-"username": "brizuela@gmail.com"
+"username": "brizuelaalvarado@gmail.com"
 "password": "12345"
 }
 ```
